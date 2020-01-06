@@ -8,6 +8,7 @@ namespace CsTests
 {
     class Derived1 : BaseClass
     {
+        public int z = 2;
       //Wykorzystanie konstruktora klasy bazowej. Najpierw wywolywany bazowy  
         public Derived1() : base()
             {

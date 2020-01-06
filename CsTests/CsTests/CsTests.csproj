@@ -46,6 +46,7 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="Derived1.cs" />
     <Compile Include="Derived2.cs" />
+    <Compile Include="GenericClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

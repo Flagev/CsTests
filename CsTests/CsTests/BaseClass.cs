@@ -51,6 +51,9 @@ namespace CsTests
             i = this.i;
             j = this.j;
         }
+        ~BaseClass() {
+            Console.WriteLine("Finalize!");
+        }
         //Metoda wyrazeniowa
         public void ExpressionMethod() => Console.WriteLine("xm");
         void TestFunction()

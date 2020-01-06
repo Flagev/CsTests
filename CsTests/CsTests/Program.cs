@@ -38,6 +38,15 @@ namespace CsTests
             {
                 d1b.MyProperty = 2;
             }
+            //Uzycie klasy generycznej
+            var genericC = new GenericClass<int,int>();
+            genericC[2,2] = 2;
+            Console.WriteLine($"Generic Indexer: {genericC[2,2]}");
+            //Kowariancja - mozna do referencji nadklasy wpisac podklase poprzez wykorzsytanie interfejsu. Pozniej mozna ja wykorzystac do metody wymagajcej nadklasy.
+            //bclass mozna przekazac dalej
+            var generic2 = new GenericClass2<Derived1>();
+            generic2.readData = new Derived1();
+            IReadable<BaseClass> bClass = generic2;
             Console.ReadLine();
         }
 
